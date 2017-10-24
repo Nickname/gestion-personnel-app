@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Les collaborateurs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="nav.js"></script>
+</head>
+<body>
+  <header id="bandeau" class="row col-md-12 col-lg-12">
+  </header>
+  <div id="container" class="col-md-12 col-lg-12">
+    <div class="row offset-8 col-lg-4 col-md-4">
+      <button class="btn btn-primary btn-block" type="button" name="button">
+        Ajouter un nouveau collaborateur
+      </button>
+    </div>
+    <h1 class="row col-md-12 col-lg-12">Les collaborateurs</h1>
+
+    <div id="filtre" class="row">
+      <div id="recherche" class="col-md-8 col-lg-8">
+        <div id="filtre_name" class="row col-md-12 col-lg-12">
+          <div class="col-md-8 col-md-8">Rechercher un nom ou un prénom qui commence par : </div>
+          <input type="text" class="col-md-4 col-lg-4" placeholder="Nom ou prénom"></input>
+        </div>
+        <div id="filtre_dep" class="row col-md-12 col-lg-12">
+          <div class="col-md-8 col-md-8">Filtrer par département : </div>
+          <select class="filtre_dep col-md-4 col-lg-4" name="filtre_dep">
+            <option value="Comptabilité">Comptabilité</option>
+            <option value="Ressources Humaines">Ressources Humaines</option>
+            <option value="Informatique">Informatique</option>
+          </select>
+        </div>
+      </div>
+      <div id="collabo_desac" class="col-md-4 col-lg-4">
+        <input type="checkbox" name="collabo_desac">Voir les collaborateurs désactivés</input>
+      </div>
+    </div>
+
+    <div id="liste_collabo" class="row offset-1 col-md-10 col-lg-10">
+
+    <div id="collabo" class="col-md-4 col-lg-4">
+      <div id="name" class="row col-md-12 col-lg-12">
+
+      </div>
+      <div id="contenu" class="row">
+        <img class="col-md-4 col-lg-4" src="https://i.pinimg.com/736x/80/76/cc/8076cc3d8366aea7f28136992e610077--penguin-baby-penguin-love.jpg" alt="">
+        <div id="description" class="col-md-8 col-lg-8">
+          <p>Fonction</p>
+          <p>Département</p>
+          <p>Email</p>
+          <p>Téléphone</p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
