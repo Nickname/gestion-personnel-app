@@ -10,77 +10,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="nav.js"></script>
+  <script src="script/nav.js"></script>
 </head>
-<body>
-  <header id="bandeau" class="row col-md-12 col-lg-12">
+<body id="activites">
+  <header id="bandeau" class="">
   </header>
 
-  <div id="container" class="col-md-12 col-lg-12">
+  <div id="container" class="col-12 top50">
 
-    <div class="row offset-8 col-lg-4 col-md-4">
-      <button class="btn btn-primary btn-block" type="button" name="button">
-        Ajouter un nouveau collaborateur
-      </button>
-    </div>
-    <h1 class="row col-md-12 col-lg-12">Les collaborateurs</h1>
+    <h1 class="display-4">Activités depuis le démarrage</h1>
 
-    <div id="filtre" class="row top15 input-group">
-      <div id="recherche" class="col-md-9 col-lg-9 form-group">
-        <div id="filtre_name" class="row col-md-12 col-lg-12">
-          <div class="col-md-8 col-md-8">Rechercher un nom ou un prénom qui commence par : </div>
-          <input type="text" class="col-md-4 col-lg-4 form-control" placeholder="Nom ou prénom"></input>
-        </div>
-        <div id="filtre_dep" class="row top5 col-md-12 col-lg-12">
-          <div class="col-md-8 col-md-8">Filtrer par département : </div>
-        <!--  <select class="filtre_dep col-md-4 col-lg-4" name="filtre_dep">
-            <option value="Comptabilité">Comptabilité</option>
-            <option value="Ressources Humaines">Ressources Humaines</option>
-            <option value="Informatique">Informatique</option>
-          </select> -->
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Filtre
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Comptabilité</button>
-              <button class="dropdown-item" type="button">Ressources Humaines</button>
-              <button class="dropdown-item" type="button">Informatique</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="collabo_desac" class="col-md-3 col-lg-3">
-        <input type="checkbox" name="collabo_desac"> Voir les collaborateurs désactivés</input>
-      </div>
-    </div>
-
-    <div id="liste_collabo" class="row offset-1 col-md-10 col-lg-10">
-
-      <div id="collabo" class="card border-primary md-3" style="width: 20rem;">
-        <h4 id="name" class="card-header">Prénom NOM</h4>
-        <div id="contenu" class="card-body">
-          <img class="card-img-left img-responsive" style="max-height:150px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmtRhS0il0UU65L4prJy0ZtbBP5iVWQQB7JyYYL4dtM9Q2BJ3yLQ" alt="">
-          <div id="description">
-            <span class="row">
-              <p>Fonction</p>
-              <p>{data}</p>
-            </span>
-            <span class="row">
-              <p>Département</p>
-              <p>{data}</p>
-            </span>
-            <span class="row">
-              <p>Email</p>
-              <p>{data}</p>
-            </span>
-            <span class="row"><p>Téléphone</p><p>{data}</p></span>
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary" name="button">Editer</button>
-      </div>
-
-    </div>
+    <table class="table table-bordered table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>Date/Heure</th>
+          <th>Libellé</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10/10/2017 10:50:52</td>
+          <td>Création d'un nouveau collarborateur - matricule XXXXXX (lien)</td>
+        </tr>
+        <tr>
+          <td>10/10/2017 10:52:52</td>
+          <td>Modification d'un collarborateur - matricule XXXXXX (lien)</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 </body>
